@@ -1,0 +1,26 @@
+.carousel-splite{
+    .splide__arrow{
+            color: #0E38CD;
+    background: #fff;
+    border: 2px solid;
+    }
+.splide__arrow--next {
+        right: unset;
+
+        &:after {
+            content: '\f061';
+        }
+    }
+
+    .splide__arrow--prev {
+        left: unset;
+
+        &:after {
+            content: '\f060';
+        }
+    }
+
+    .splide__arrow svg {
+        display: none;
+    }
+}
