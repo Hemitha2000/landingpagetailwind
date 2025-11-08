@@ -113,24 +113,28 @@ span.quote-section:after, span.quote-section:before {
 
 <body>
   <section class="header-section  primary-color">
-    <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto">
-      <div class="flex items-center justify-between">
-        <div class="w-1/3">
+    <div class="min-[1440px]:w-[85%] w-[95%] mx-auto">
+      <div class="flex items-center justify-between max-[1280px]:gap-4">
+        <div class="min-[1280px]:w-1/3">
           <img src="./assets/Askmeidentity 2.png" alt="logo" width="200px">
         </div>
-        <div class="flex items-center justify-between w-2/3 text-[18px]">
-          <ul class="flex items-center gap-10 righteous-regular">
+        <div class="burger-menu max-[1024px]:block hidden" onclick="openMenu()">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+        <div id="navMenu" class="z-[9] max-[1024px]:bg-[#7249cc] max-[1024px]:p-5 max-[1024px]:absolute max-[1024px]:top-[90px] max-[1024px]:left-0 max-[1024px]:right-0 max-[1024px]:bottom-0  max-[1024px]:hidden max-[1024px]:block flex items-center justify-between min-[1280px]:w-2/3 text-[18px] gap-5">
+
+          <ul class="max-[1024px]:w-full max-[1024px]:flex-col max-[1024px]:gap-5 max-[1024px]:items-start flex items-center gap-10 righteous-regular">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Courses</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <ul class="flex items-center gap-6">
-            <li class="relative"><img src="./assets/Ellipse2.png" alt=""><span class="bg-[#2aaa94] text-white text-[12px] py-[1px] px-[6px] rounded-full absolute top-[-9px] right-[-9px]">0</span></li>
-            <li><img src="./assets/Ellipse3.png" alt=""></li>
-            <li><img src="./assets/Ellipse4.png" alt=""></li>
+          <ul class="flex items-center gap-6 max-[1024px]:w-full max-[1024px]:py-6">
+            <li class="relative"><img src="./assets/Ellipse2.png" alt="" class="max-w-fit"><span class="bg-[#2aaa94] text-white text-[12px] py-[1px] px-[6px] rounded-full absolute top-[-9px] right-[-9px]">0</span></li>
+            <li><img src="./assets/Ellipse3.png" alt="" class="max-w-fit"></li>
+            <li><img src="./assets/Ellipse4.png" alt="" class="max-w-fit"></li>
           </ul>
-          <div class="flex items-center gap-7 saira">
+          <div class="flex items-center gap-7 saira max-[1024px]:w-full">
             <a href="#" class="underline decoration-gray-400 underline-offset-4 decoration-1">Login</a>
             <a href="#" class="bg-[linear-gradient(to_right,#083F9B_0%,#7F56D9_100%)] block px-9 py-4 rounded-xl text-white">Signup</a>
           </div>
@@ -138,26 +142,28 @@ span.quote-section:after, span.quote-section:before {
       </div>
     </div>
   </section>
-  <section class="banner-section relative text-white min-h-screen">
-    <img src="./assets/Group 1000014989.png" alt="banner" width="100%" class="absolute left-0 right-0 top-0 z-[-1]">
-       <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto absolute top-0 left-0 right-0">
-          <div class="flex justify-between mt-20 gap-25">
-              <div class="w-1/2">
-                <p class="text-[24px] encode-sans-condensed-light tracking-[4px] mb-5">Successful coaches are visionaries</p>
-                <h1 class="text-[90px] leading-[1.3] righteous-regular">Good <span class="text-[#0E38CD]">coaching</span> is good teaching & nothing else.</h1>
-                <div class="flex items-center gap-10 encode-sans-condensed-light tracking-[2px] my-20">
-                  <a href="#" class="border inline-block px-9 py-4 rounded-xl text-white text-xl">View Courses</a>
-                  <a href="#" class="text-xl">Get Free Consultation</a>
+  <section class="banner-section relative text-white">
+    <img class="max-[1024px]:hidden" src="./assets/Group 1000014989.png" alt="banner" width="100%">
+    <img class="min-[1024px]:hidden" src="./assets/mobile-banner-1.png" alt="banner" width="100%">
+    <img class="min-[548px]:hidden" src="./assets/mobile-2.png" alt="banner" width="100%">
+       <div class="min-[1440px]:w-[85%] w-[95%] mx-auto absolute min-[1024px]:top-0 max-[1024px]:bottom-3 left-0 right-0">
+          <div class="min-[768px]:flex justify-between min-[1024px]:mt-20 mt-5 min-[1024px]:gap-25 gap-10">
+              <div class="min-[1024px]:w-1/2">
+                <p class="max-[1440px]:text-[16px] text-[24px] encode-sans-condensed-light tracking-[4px] max-[1440px]:mb-2 mb-5">Successful coaches are visionaries</p>
+                <h1 class="max-[640px]:text-[30px] max-[1800px]:text-[45px] text-[90px] leading-[1.3] righteous-regular">Good <span class="text-[#0E38CD]">coaching</span> is good teaching & nothing else.</h1>
+                <div class="max-[640px]:flex-col flex items-center max-[640px]:gap-2 max-[1440px]:gap-5 gap-10 encode-sans-condensed-light tracking-[2px] max-[1440px]:my-10 my-20 max-[640px]:my-5">
+                  <a href="#" class="border inline-block px-9 py-4 rounded-xl text-white text-xl max-[1440px]:text-[14px] max-[640px]:p-3">View Courses</a>
+                  <a href="#" class="text-xl max-[1440px]:text-[14px]">Get Free Consultation</a>
                 </div>
-                <div class="flex items-center relative w-[70%]">
-                  <input class="w-full bg-white encode-sans-condensed-medium placeholder-[#4F547B] px-9 py-6 rounded-xl text-xl " type="text" placeholder="What do you want to learn today?">
-                  <button onclick="searchCourses()" class="absolute bg-[linear-gradient(to_right,#083F9B_0%,#7F56D9_100%)] block encode-sans-condensed-medium px-9 py-4 right-[8px] rounded-xl text-xl tracking-[2px]"><i class="fa-solid fa-magnifying-glass mr-3"></i>Search</button>
+                <div class="flex items-center relative min-[1024px]:w-[70%] max-[768px]:w-[70%] ">
+                  <input class="w-full bg-white encode-sans-condensed-medium placeholder-[#4F547B]  px-9 px-9 py-6 rounded-xl text-xl max-[1440px]:text-[14px] " type="text" placeholder="What do you want to learn today?">
+                  <button onclick="searchCourses()" class="absolute bg-[linear-gradient(to_right,#083F9B_0%,#7F56D9_100%)] block encode-sans-condensed-medium  px-9 py-4 right-[8px] rounded-xl text-xl max-[1440px]:text-[14px] tracking-[2px]"><i class="fa-solid fa-magnifying-glass mr-3"></i>Search</button>
                 </div>
               </div>
-              <div class="flex justify-between items-start w-1/2 mt-20">
-                  <div class="flex items-center gap-10">
+              <div class="flex justify-between items-start min-[1024px]:w-1/2 mt-20 max-[1440px]:mt-10">
+                  <div class="flex items-center gap-10 max-[1440px]:gap-5">
                     <span class="quote-section inline-flex flex-col items-center gap-5"><i class="fa-solid fa-quote-left bg-[#0094E7] px-[10px] py-[8px] rounded-[30px] inline-block"></i></span>
-                    <div class="encode-sans-condensed-medium text-[22px] w-2/4">
+                    <div class="encode-sans-condensed-medium text-[22px] max-[1440px]:text-[12px] min-[1024px]:w-2/4">
                       <span class="mb-3 block">Shyam</span>
                       <p class="tracking-[1px] w-2/3">In a coaching role, you ask the questions and rely more on your staff, who become the experts, to provide the information.</p>
                       <span class="text-[#0094E7] mt-3 block">4.9</span>
@@ -167,9 +173,9 @@ span.quote-section:after, span.quote-section:before {
           </div>
        </div>
   </section>
-  <section class="sponsorse-section bg-gradient-to-r from-[#2E08C7] to-[#7E08C7] py-10">
-      <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto">
-        <div class="flex items-center justify-between">
+ <section class="sponsorse-section bg-gradient-to-r from-[#2E08C7] to-[#7E08C7] py-10 overflow-hidden">
+      <div class="min-[1440px]:w-[85%] w-[95%] mx-auto animate-marquee">
+        <div class="flex items-center justify-between gap-10">
             <img src="./assets/Link ⏵ brand1.png.png" alt="" />
              <img src="./assets/Link ⏵ brand3.png.png" alt="" />
               <img src="./assets/Link ⏵ brand1.png.png" alt="" />
@@ -179,13 +185,13 @@ span.quote-section:after, span.quote-section:before {
         </div>
       </div>
   </section>
-  <section class="featured-section pt-15 pb-15 bg-[#f8faff]">
+    <section class="featured-section pt-15 pb-15 bg-[#f8faff]">
     <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto relative">
       <img src="./assets/Ellipse 118.png" alt="" class="absolute left-0 top-0">
-        <h3 class="rowdies-regular text-center text-[40px] text-[#323232]">Featured <span class="text-[#4883FF]">Course</span></h3>
-        <p class="text-center text-[24px] encode-sans-condensed-semibold tracking-[2px] uppercase text-[#000000c2] mt-2">The feature courses are we invented our teaching part</p>
-        <div class="flex flex-wrap justify-between pt-25">
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10">
+        <h3 class="rowdies-regular text-center max-[1024px]:text-[30px] text-[40px] text-[#323232]">Featured <span class="text-[#4883FF]">Course</span></h3>
+        <p class="text-center max-[1024px]:text-[18px] text-[24px] encode-sans-condensed-semibold tracking-[2px] uppercase text-[#000000c2] mt-2">The feature courses are we invented our teaching part</p>
+        <div class="max-[1024px]:flex-wrap flex flex-wrap justify-between pt-25 max-[1024px]:pt-10 ">
+          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] max-[640px]:w-full max-[1024px]:w-[calc(0.95/2*100%)] mb-10 max-[1024px]:mb-5">
               <img src="./assets/card1.png" alt="" width="100%">
               <div class="p-8">
               <div class="flex items-center justify-between text-[18px] mb-5">
@@ -199,7 +205,7 @@ span.quote-section:after, span.quote-section:before {
               <p class="text-[20px]"><b>Rs.499</b></p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10">
+          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] max-[640px]:w-full max-[1024px]:w-[calc(0.95/2*100%)] mb-10 max-[1024px]:mb-5">
               <img src="./assets/card2.png" alt="" width="100%">
               <div class="p-8">
               <div class="flex items-center justify-between text-[18px] mb-5">
@@ -213,7 +219,7 @@ span.quote-section:after, span.quote-section:before {
               <p class="text-[20px]"><b>Rs.499</b></p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10">
+          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] max-[640px]:w-full max-[1024px]:w-[calc(0.95/2*100%)] mb-10 max-[1024px]:mb-5">
               <img src="./assets/card3.png" alt="" width="100%">
               <div class="p-8">
               <div class="flex items-center justify-between text-[18px] mb-5">
@@ -227,7 +233,7 @@ span.quote-section:after, span.quote-section:before {
               <p class="text-[20px]"><b>Rs.499</b></p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10">
+          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] max-[640px]:w-full max-[1024px]:w-[calc(0.95/2*100%)] mb-10 max-[1024px]:mb-5">
               <img src="./assets/card3.png" alt="" width="100%">
               <div class="p-8">
               <div class="flex items-center justify-between text-[18px] mb-5">
@@ -241,7 +247,7 @@ span.quote-section:after, span.quote-section:before {
               <p class="text-[20px]"><b>Rs.499</b></p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10">
+          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] max-[640px]:w-full max-[1024px]:w-[calc(0.95/2*100%)] mb-10 max-[1024px]:mb-5">
               <img src="./assets/card1.png" alt="" width="100%">
               <div class="p-8">
               <div class="flex items-center justify-between text-[18px] mb-5">
@@ -255,7 +261,7 @@ span.quote-section:after, span.quote-section:before {
               <p class="text-[20px]"><b>Rs.499</b></p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10">
+          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] max-[640px]:w-full max-[1024px]:w-[calc(0.95/2*100%)] mb-10 max-[1024px]:mb-5">
               <img src="./assets/card2.png" alt="" width="100%">
               <div class="p-8">
               <div class="flex items-center justify-between text-[18px] mb-5">
@@ -276,75 +282,75 @@ span.quote-section:after, span.quote-section:before {
     </div>
   </section>
   <section class="relative text-white">
-    <img src="./assets/Group 1000014990.png" alt="banner" width="100%" class="absolute left-0 right-0 top-0 z-[-1]">
-            <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto relative pt-[100px]">
-                 <h3 class="righteous-regular text-center text-[40px] text-white">Why <span class="text-[#0E38CD]">learn</span> with our courses? </h3>
-                <p class="text-center text-[18px] saira tracking-[2px] text-white mt-2 w-[40%] mx-auto">We are providing the best courses and top classes.And extradinery placement training.....</p>
-                <div class="flex flex-wrap justify-between py-30 w-[85%] mx-auto">
-                    <div class="w-[calc(0.95/3*100%)] text-center flex flex-col items-center border-r border-dashed border-white">
+    <img src="./assets/Group 1000014990.png" alt="banner" width="100%" class="max-[680px]:min-h-[920px] max-[1024px]:min-h-[400px] absolute left-0 right-0 top-0 z-[-1]">
+            <div class="min-[1440px]:w-[85%] w-[95%] mx-auto relative pt-[100px] max-[1580px]:pt-[40px]">
+                 <h3 class="righteous-regular text-center max-[1280px]:text-[30px] text-[40px] text-white">Why <span class="text-[#0E38CD]">learn</span> with our courses? </h3>
+                <p class="text-center max-[1280px]:text-[14px] text-[18px] saira tracking-[2px] text-white mt-2 w-[40%] max-[1280px]:w-full mx-auto">We are providing the best courses and top classes.And extradinery placement training.....</p>
+                <div class="max-[680px]:flex-col flex flex-wrap justify-between py-30 w-[85%] mx-auto max-[1280px]:py-5 max-[1280px]:w-full">
+                    <div class="max-[680px]:py-4 w-[calc(0.95/3*100%)] text-center flex flex-col items-center max-[680px]:w-full max-[680px]:border-b min-[680px]:border-r border-dashed border-white">
                         <img src="./assets/Icon (3).png" alt="">
                         <h4 class="righteous-regular text-[16px] py-5">01. Learn</h4>
-                        <p class="encode-sans-condensed-medium  text-[14px] tracking-[1px] w-1/2">Learn continually. There is always “one more thing”to learn.</p>
+                        <p class="encode-sans-condensed-medium  text-[14px] tracking-[1px] w-1/2 max-[1280px]:w-full">Learn continually. There is always “one more thing”to learn.</p>
                     </div>
-                    <div class="w-[calc(0.95/3*100%)] text-center flex flex-col items-center border-r border-dashed border-white">
+                    <div class="max-[680px]:py-4 w-[calc(0.95/3*100%)] text-center flex flex-col items-center max-[680px]:w-full max-[680px]:border-b min-[680px]:border-r border-dashed border-white">
                         <img src="./assets/Icon (3).png" alt="">
                         <h4 class="righteous-regular text-[16px] py-5">01. Learn</h4>
-                        <p class="encode-sans-condensed-medium  text-[14px] tracking-[1px] w-1/2">Learn continually. There is always “one more thing”to learn.</p>
+                        <p class="encode-sans-condensed-medium  text-[14px] tracking-[1px] w-1/2 max-[1280px]:w-full">Learn continually. There is always “one more thing”to learn.</p>
                     </div> 
-                    <div class="w-[calc(0.95/3*100%)] text-center flex flex-col items-center">
+                    <div class="max-[680px]:py-4 w-[calc(0.95/3*100%)] text-center flex flex-col items-center max-[680px]:w-full ">
                         <img src="./assets/Icon (3).png" alt="">
                         <h4 class="righteous-regular text-[16px] py-5">01. Learn</h4>
-                        <p class="encode-sans-condensed-medium  text-[14px] tracking-[1px] w-1/2">Learn continually. There is always “one more thing”to learn.</p>
+                        <p class="encode-sans-condensed-medium  text-[14px] tracking-[1px] w-1/2 max-[1280px]:w-full">Learn continually. There is always “one more thing”to learn.</p>
                     </div>
                 </div>
             </div>
      </div>
   </section>
   <section class="featured-section pt-15 pb-15 bg-[#f8faff]">
-    <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto relative">
-        <h3 class="rowdies-regular text-center text-[40px] text-[#323232]">Top <span class="text-[#4883FF]">Categories</span></h3>
-        <p class="text-center text-[24px] encode-sans-condensed-semibold tracking-[2px] text-[#000000c2] mt-2">100+ unique online course list designs</p>
-        <div class="flex justify-between pt-25 gap-10 text-center">
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
+    <div class="min-[1440px]:w-[85%] w-[95%] mx-auto  relative">
+        <h3 class="rowdies-regular text-center max-[1024px]:text-[30px] text-[40px] text-[#323232]">Top <span class="text-[#4883FF]">Categories</span></h3>
+        <p class="text-center text-[24px] max-[1024px]:text-[18px] encode-sans-condensed-semibold tracking-[2px] text-[#000000c2] mt-2">100+ unique online course list designs</p>
+        <div class="max-[1280px]:flex-wrap flex justify-between max-[1280px]:justify-center pt-25 max-[1024px]:pt-10 max-[1280px]:gap-2 gap-10 text-center">
+          <div class="max-[1280px]:w-[calc(0.95/4*100%)] bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira max-[680px]:w-[calc(0.95/2*100%)] w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
               <img src="./assets/div.features-box-image.png" alt="" />
               <div class="p-8">
-              <h4 class="text-[24px]"><b>Digtal Marketing</b></h4>
-              <p class="text-[20px] pt-5">25 Courses</p>
+              <h4 class="text-[24px] max-[1280px]:text-[18px] "><b>Digtal Marketing</b></h4>
+              <p class="text-[20px] pt-5 max-[1280px]:text-[14px] ">25 Courses</p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
+          <div class="max-[1280px]:w-[calc(0.95/4*100%)] bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira max-[680px]:w-[calc(0.95/2*100%)] w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
               <img src="./assets/div.features-box-image (1).png" alt="" />
               <div class="p-8">
-              <h4 class="text-[24px]"><b>Digtal Marketing</b></h4>
-              <p class="text-[20px] pt-5">25 Courses</p>
+              <h4 class="text-[24px] max-[1280px]:text-[18px] "><b>Digtal Marketing</b></h4>
+              <p class="text-[20px] pt-5 max-[1280px]:text-[14px] ">25 Courses</p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
+          <div class="max-[1280px]:w-[calc(0.95/4*100%)] bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira max-[680px]:w-[calc(0.95/2*100%)] w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
               <img src="./assets/div.features-box-image (2).png" alt="" />
               <div class="p-8">
-              <h4 class="text-[24px]"><b>Digtal Marketing</b></h4>
-              <p class="text-[20px] pt-5">25 Courses</p>
+              <h4 class="text-[24px] max-[1280px]:text-[18px] "><b>Digtal Marketing</b></h4>
+              <p class="text-[20px] pt-5 max-[1280px]:text-[14px] ">25 Courses</p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
+          <div class="max-[1280px]:w-[calc(0.95/4*100%)] bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira max-[680px]:w-[calc(0.95/2*100%)] w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
               <img src="./assets/div.features-box-image (3).png" alt="" />
               <div class="p-8">
-              <h4 class="text-[24px]"><b>Digtal Marketing</b></h4>
-              <p class="text-[20px] pt-5">25 Courses</p>
+              <h4 class="text-[24px] max-[1280px]:text-[18px] "><b>Digtal Marketing</b></h4>
+              <p class="text-[20px] pt-5 max-[1280px]:text-[14px] ">25 Courses</p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
+          <div class="max-[1280px]:w-[calc(0.95/4*100%)] bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira max-[680px]:w-[calc(0.95/2*100%)] w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
               <img src="./assets/div.features-box-image.png" alt="" />
               <div class="p-8">
-              <h4 class="text-[24px]"><b>Digtal Marketing</b></h4>
-              <p class="text-[20px] pt-5">25 Courses</p>
+              <h4 class="text-[24px] max-[1280px]:text-[18px] "><b>Digtal Marketing</b></h4>
+              <p class="text-[20px] pt-5 max-[1280px]:text-[14px] ">25 Courses</p>
               </div>
           </div>
-          <div class="bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
+          <div class="max-[1280px]:w-[calc(0.95/4*100%)] bg-white bg-white overflow-hidden rounded-xl text-[#4E596B] saira max-[680px]:w-[calc(0.95/2*100%)] w-[calc(0.95/3*100%)] mb-10 flex flex-col items-center pt-8">
               <img src="./assets/div.features-box-image (1).png" alt="" />
               <div class="p-8">
-              <h4 class="text-[24px]"><b>Digtal Marketing</b></h4>
-              <p class="text-[20px] pt-5">25 Courses</p>
+              <h4 class="text-[24px] max-[1280px]:text-[18px] "><b>Digtal Marketing</b></h4>
+              <p class="text-[20px] pt-5 max-[1280px]:text-[14px] ">25 Courses</p>
               </div>
           </div>
         </div>
@@ -352,40 +358,40 @@ span.quote-section:after, span.quote-section:before {
     </div>
   </section>
   <section class="bg-white pt-30">
-    <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto relative pb-5">
-        <img src="./assets/Group 1000014989 (1).png" alt="" width="90%">
-        <img src="./assets/absolute1.png" alt="" class="absolute top-[10%] right-[15%] bottom-0">
+    <div class="min-[1440px]:w-[85%] w-[95%] mx-auto relative pb-5">
+        <img src="./assets/Group 1000014989 (1).png" alt="" width="90%" class="max-[1440px]:min-h-[520px]">
+        <img src="./assets/absolute1.png" alt="" class="absolute top-[10%] right-[15%]  bottom-0">
         <img src="./assets/absolute2.png" alt="" class="absolute top-[10%] left-[10%] bottom-0">
         <img src="./assets/Polygon 7.png" alt="" class="absolute right-0 bottom-0">
-        <div class="absolute top-0 right-[10%] bottom-[20%] left-0 flex flex-col items-center justify-center text-center text-white w-[30%] mx-auto">
-          <h3 class="righteous-regular text-[40px] leading-[1.3]">Subscribe For Get Update Every New Courses</h3>
-          <p class="py-8 encode-sans-condensed-medium text-[16px] tracking-[1px]">20k+ students daily learn with Eduvi. Subscribe for new courses.</p>
-          <div class="encode-sans-condensed-medium tracking-[1px] w-full flex">
+        <div class="absolute top-0 right-[10%] bottom-[20%] left-0 flex flex-col items-center justify-center text-center text-white w-[30%]  max-[1366px]:w-[90%] mx-auto">
+          <h3 class="righteous-regular max-[1366px]:text-[30px] max-[1366px]:w-[80%]  text-[40px] leading-[1.3]">Subscribe For Get Update Every New Courses</h3>
+          <p class="py-8 encode-sans-condensed-medium  max-[1366px]:w-[80%] max-[1366px]:text-[12px] text-[16px] tracking-[1px]">20k+ students daily learn with Eduvi. Subscribe for new courses.</p>
+          <div class="encode-sans-condensed-medium tracking-[1px] w-full max-[1366px]:w-[80%] flex">
             <input class="bg-[#ffffff47] px-4 py-4 rounded-tl-[10px] rounded-bl-[10px] w-full" type="text" placeholder="enter your email" />
             <button class="bg-[#0E38CD] px-9 rounded-tr-[10px] rounded-br-[10px]">Subscribe</button>
           </div>
         </div>
     </div>
   </section>
-  <section class="py-30">
-    <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto relative pb-5">
+  <section class="py-30 max-[1280px]:py-20 ">
+    <div class="min-[1440px]:w-[85%] w-[95%] mx-auto relative pb-5">
       <div class="flex justify-center">
         <img src="./assets/video_img.png" alt="" width="95%" class="ml-auto">
       </div>
     </div>
   </section>
   <section class="bg-[#f8faff] pt-20">
-    <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto">
-        <h3 class="rowdies-regular text-center text-[40px] text-[#323232]"><span class="text-[#4883FF]">Testimonials</span></h3>
-        <p class="text-center text-[24px] encode-sans-condensed-semibold tracking-[2px] text-[#000000c2] mt-2">What our student say about us</p>
+    <div class="min-[1440px]:w-[85%] w-[95%] mx-auto ">
+        <h3 class="rowdies-regular text-center max-[1024px]:text-[30px] text-[40px] text-[#323232]"><span class="text-[#4883FF]">Testimonials</span></h3>
+        <p class="text-center text-[24px] max-[1024px]:text-[18px] encode-sans-condensed-semibold tracking-[2px] text-[#000000c2] mt-2">What our student say about us</p>
         <div class="carousel-splite">
            <div id="image-carousel" class="splide" aria-label="Beautiful Images">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -396,9 +402,9 @@ span.quote-section:after, span.quote-section:before {
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -409,9 +415,9 @@ span.quote-section:after, span.quote-section:before {
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -422,9 +428,9 @@ span.quote-section:after, span.quote-section:before {
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -435,9 +441,9 @@ span.quote-section:after, span.quote-section:before {
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -448,9 +454,9 @@ span.quote-section:after, span.quote-section:before {
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -461,9 +467,9 @@ span.quote-section:after, span.quote-section:before {
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -474,9 +480,9 @@ span.quote-section:after, span.quote-section:before {
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative">
+                                <div class="bg-white p-8 my-10 shadow-[-2px_2px_6px_#918b8b] relative max-[1024px]:p-4">
                                     <img src="./assets/th (1) 6.png" alt="" class="absolute top-[-40px] left-[42%] right-[42%]">
-                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                                    <p class="text-[#7E7EAA] encode-sans-condensed-regular py-5 px-2 max-[1024px]:text-[14px]">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
                                     <span>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
                                       <i class="fa-solid fa-star text-[#FAB437]"></i>
@@ -493,12 +499,10 @@ span.quote-section:after, span.quote-section:before {
     </div>
   </section>
   <section class="bg-gradient-to-r from-[#7a5af8] via-[#8b5cf6] to-[#3b82f6] text-black pt-12 pb-6  righteous-regular ">
-  <div class="w-[95%] md:w-4/5 2xl:w-[85%] mx-auto">
+  <div class="min-[1440px]:w-[85%] w-[95%] mx-auto ">
 
-    <!-- Top grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 border-b border-white/20 pb-8">
       
-      <!-- Connect -->
       <div>
         <h3 class="text-lg font-semibold mb-4">Connect</h3>
         <img src="./assets/Askmeidentity 2.png" alt="Logo" class="w-[160px] mb-3">
@@ -510,7 +514,6 @@ span.quote-section:after, span.quote-section:before {
         </p>
       </div>
 
-      <!-- Classes -->
       <div>
         <h3 class="text-lg font-semibold mb-4">Classes</h3>
         <ul class="space-y-2 text-sm">
@@ -522,7 +525,6 @@ span.quote-section:after, span.quote-section:before {
         </ul>
       </div>
 
-      <!-- Community -->
       <div>
         <h3 class="text-lg font-semibold mb-4">Community</h3>
         <ul class="space-y-2 text-sm">
@@ -534,7 +536,6 @@ span.quote-section:after, span.quote-section:before {
         </ul>
       </div>
 
-      <!-- Quick Links -->
       <div>
         <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
         <ul class="space-y-2 text-sm">
@@ -547,7 +548,6 @@ span.quote-section:after, span.quote-section:before {
         </ul>
       </div>
 
-      <!-- More -->
       <div>
         <h3 class="text-lg font-semibold mb-4">More</h3>
         <ul class="space-y-2 text-sm">
@@ -562,7 +562,6 @@ span.quote-section:after, span.quote-section:before {
 
     </div>
 
-    <!-- Social icons -->
     <div class="flex justify-center gap-5 mt-8">
       <a href="#" class="bg-white text-[#7a5af8] rounded-full py-2 px-3 hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
       <a href="#" class="bg-white text-green-500 rounded-full py-2 px-3 hover:scale-110 transition"><i class="fab fa-whatsapp"></i></a>
@@ -571,13 +570,11 @@ span.quote-section:after, span.quote-section:before {
       <a href="#" class="bg-white text-red-500 rounded-full py-2 px-3 hover:scale-110 transition"><i class="fab fa-youtube"></i></a>
     </div>
 
-    <!-- Copyright -->
     <p class="text-center text-sm mt-6 text-white/80">
       Copyright © 2023 askmeidentity. All Rights Reserved
     </p>
   </div>
 </section>
-
 </body>
 <style>
   .splide__slide{
@@ -603,11 +600,20 @@ span.quote-section:after, span.quote-section:before {
     right: -110px;
     font-family: 'Font Awesome 6 Free';
 }
+@media (max-width:1280px) {
+    .carousel-splite .splide__arrows{
+        right: 0;
+    }
+}
  
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <script>
+  function openMenu(){
+   const menu = document.getElementById('navMenu');
+    menu.classList.toggle('max-[1024px]:hidden');
+  }
     document.addEventListener('DOMContentLoaded', function () {
         new Splide('#image-carousel', {
             perPage: 3,
